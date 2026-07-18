@@ -79,7 +79,7 @@ export const about = {
   ],
   statement: [
     "Learning by doing, building things that make life easier (bc I'm lazy).",
-    'The goal? Be like Tony Stark.',
+    'The goal? To follow my curiosity.',
   ],
   philosophy: 'Experiment. Get uncomfortable. Teach. Repeat.',
 }

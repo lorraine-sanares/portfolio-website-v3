@@ -536,7 +536,7 @@ a {
   left: 50%;
   top: 50%;
   transform: translate(-30%, -50%);
-  width: 215px;
+  width: 250px;
   border: 1px solid var(--line);
   padding: 3px;
   background: var(--surface);
@@ -927,11 +927,12 @@ a {
    FOOTER / CONTACT
 ───────────────────────────────────────────── */
 .footer {
+  padding-top: 24px;
   padding-bottom: 32px;
 }
 .footer__head {
   display: flex;
-  align-items: flex-end;
+  align-items: flex-start;
   justify-content: space-between;
   gap: 20px;
 }
@@ -955,7 +956,7 @@ a {
   position: absolute;
   top: 44px;
   right: 50px;
-  width: 80px;
+  width: 160px;
 }
 .footer__find {
   font-size: 12px;
