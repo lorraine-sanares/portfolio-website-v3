@@ -1,4 +1,5 @@
 import { about } from '../data/content.js'
+import pfp from '../../pfp.jpg'
 
 function highlight(line, i) {
   // very small "syntax highlighter" for the fake editor
@@ -48,8 +49,8 @@ export default function About() {
           <img className="about__micrographics" src="/assets/micrographics.png" alt="" />
           <img
             className="about__stark-frame"
-            src="/assets/tony-stark.png"
-            alt="Tony Stark in his workshop"
+            src={pfp}
+            alt="Lorraine holding a mechanical keyboard"
           />
         </div>
 
