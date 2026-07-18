@@ -1,38 +1,24 @@
-# Personal Portfolio (Vite + React + TypeScript + Tailwind CSS + GSAP)
+# Lorraine Sanares — Portfolio v3
 
-This repository contains a one‑page personal portfolio built with a modern frontend stack. The design is inspired by editorial layouts, digital scrapbooks, and tactile stationery, with subtle GSAP animations for intentional motion.
+Single-page portfolio built with React + Vite. Design: Figma "Portfolio Website 2026" (see `BUILD_PROMPT.md`).
 
-## Features
-
-- Vite + React + TypeScript scaffold
-- Tailwind CSS for utility-first styling with a custom palette and fonts
-- GSAP reveal animations and ScrollTrigger support
-- Data-driven sections: hero, lab/fridge magnet, projects, timeline, calendar, digest, photography, footer
-- Responsive, accessible, semantic markup
-
-## Development
+## Run locally
 
 ```bash
-cd my-portfolio
-npm install    # install dependencies
-npm run dev    # start development server
-# open http://localhost:5173 in your browser
+npm install
+npm run dev
 ```
 
-## Build
+## Deploy
 
-```bash
-npm run build
-npm run preview
-```
+Push to GitHub → import in Vercel (framework preset: Vite). No config needed.
 
-## Structure
+## Editing content
 
-- `src/components` – reusable building-block components
-- `src/sections` – page sections corresponding to site areas
-- `src/data` – hardcoded content that can be edited easily
-- `src/hooks` – custom React hooks (GSAP integration, etc.)
-- `src/lib` – utility functions (empty for now)
-- `src/assets` – static assets like images
+Everything editable lives in `src/data/content.js` — desk items, about text, projects, blueprints, resources, photo collections. No component changes needed.
 
-Feel free to expand and adapt the layout, update styles, and replace placeholder content with your own.
+## Swapping in real assets
+
+- Replace SVG placeholders in `public/images/` (desk items, project shots, mascot) with your Figma exports — keep the filenames or update paths in `content.js`.
+- Add photos to `public/images/photos/` and register them in the `photos` array in `content.js`.
+- Drop your resume at `public/resume.pdf` (the Resume desk cell and footer button link to it).
