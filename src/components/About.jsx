@@ -56,16 +56,32 @@ export default function About() {
 
         {/* center column — statement text */}
         <div className="about__text-col">
-          <p className="about__big">
-            {about.statement[0]}{' '}
-            <img
-              className="about__keycap"
-              src="/assets/mechanical-key.png"
-              alt=""
-              aria-hidden="true"
-            />
-          </p>
-          <p className="about__big about__big--strong">{about.statement[1]}</p>
+          <ol className="about__statements">
+            {about.statement.map((line, i) => (
+              <li
+                className={`about__big${i === about.statement.length - 1 ? ' about__big--strong' : ''}`}
+                key={line}
+              >
+                {i > 0 && (
+                  <span className="about__statement-arrow mono" aria-hidden="true">
+                    ↓
+                  </span>
+                )}
+                {line}
+                {i === 0 && (
+                  <>
+                    {' '}
+                    <img
+                      className="about__keycap"
+                      src="/assets/mechanical-key.png"
+                      alt=""
+                      aria-hidden="true"
+                    />
+                  </>
+                )}
+              </li>
+            ))}
+          </ol>
 
           <div className="about__philosophy-row">
             <p className="about__philosophy mono">{about.philosophy}</p>

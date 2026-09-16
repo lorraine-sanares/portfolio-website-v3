@@ -78,7 +78,9 @@ export const about = {
     { cmd: 'LOAD', text: 'DaVinci Resolve — video editing' },
   ],
   statement: [
-    "Learning by doing, building things that make life easier (bc I'm lazy).",
+    "A brush is only as effective as the painter.",
+    "I build things to learn, and I learn to build things.",
+    "Finding the intersection between fields, briding ideas, and creating something new.",
     'The goal? To follow my curiosity.',
   ],
   philosophy: 'Experiment. Get uncomfortable. Teach. Repeat.',

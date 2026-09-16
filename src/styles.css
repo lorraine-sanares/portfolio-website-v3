@@ -458,14 +458,35 @@ a {
   padding-right: 40px; /* balances the schematic column */
 }
 
+/* statement list: each line numbered like a blueprint callout */
+.about__statements {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-width: 560px;
+  margin-inline: auto;
+  display: grid;
+  gap: 10px;
+}
+
 .about__big {
-  font-size: clamp(20px, 3vw, 28px);
-  font-weight: 600;
-  max-width: 640px;
-  margin: 0 auto 14px;
+  position: relative;
+  font-size: clamp(14px, 1.7vw, 18px);
+  font-weight: 500;
+  line-height: 1.35;
+  margin: 0;
+  color: var(--ink-soft);
 }
 .about__big--strong {
-  font-weight: 900;
+  font-weight: 800;
+  color: var(--ink);
+}
+.about__statement-arrow {
+  display: block;
+  font-size: 13px;
+  color: var(--blue);
+  line-height: 1;
+  margin-bottom: 8px;
 }
 
 /* philosophy row: text ← [Philosophies] + statue */
