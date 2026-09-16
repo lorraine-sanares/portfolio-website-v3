@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 160">
+<rect width="200" height="160" fill="none"/>
+
+<path d="M 80 130 L 80 78 Q 80 70 87 70 Q 93 70 93 78 L 93 60 Q 93 52 100 52 Q 107 52 107 60 L 107 56 Q 107 48 114 48 Q 121 48 121 56 L 121 66 Q 121 60 128 60 Q 134 60 134 68 L 134 105 Q 134 130 110 130 Z" fill="#f7f6f2" stroke="#1a1a1a" stroke-width="2.5"/>
+<circle cx="107" cy="90" r="26" fill="none" stroke="#2f5fa8" stroke-width="1.5" stroke-dasharray="5 4"/>
+<line x1="60" y1="90" x2="76" y2="90" stroke="#2f5fa8" stroke-width="1.5"/>
+<line x1="138" y1="90" x2="154" y2="90" stroke="#2f5fa8" stroke-width="1.5"/>
+<text x="144" y="46" font-family="monospace" font-size="9" fill="#2f5fa8">[TRACKING]</text>
+</svg>
